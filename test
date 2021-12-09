@@ -4,3 +4,40 @@ if parrot = 5:
 print('This parrot is a certified' bruh 'moment')
 print('Bruh')
 print('does this work yet?')
+def start():
+    gimbal_ctrl.recenter()
+    chassis_ctrl.set_trans_speed(1)
+    chassis_ctrl.set_rotate_speed(30)
+    chassis_ctrl.move_with_distance(0, 5)
+    chassis_ctrl.move_with_distance(0,2.32)
+    # First Door
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,90)
+    chassis_ctrl.rotate_with_degree(rm_define.clockwise,90)
+    # Continue to End of Hall
+    chassis_ctrl.move_with_distance(0,5)
+    chassis_ctrl.move_with_distance(0,1.98)
+    # End of Hall 
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,45)
+    chassis_ctrl.move_with_distance(0,3.11)
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,46)
+    # Start down next Hall
+    chassis_ctrl.move_with_distance(0, 5)
+    chassis_ctrl.move_with_distance(0, 0.4164)
+    # Second Door
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,90)
+    chassis_ctrl.rotate_with_degree(rm_define.clockwise,90)
+
+    chassis_ctrl.move_with_distance(0, 5)
+    chassis_ctrl.move_with_distance(0,4.1656)
+    # Third Door
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,90)
+    chassis_ctrl.rotate_with_degree(rm_define.clockwise,90)
+
+    chassis_ctrl.move_with_distance(0, 5)
+    chassis_ctrl.move_with_distance(0,5)
+    chassis_ctrl.move_with_distance(0,.1376)
+    
+    # Fourth Door
+    chassis_ctrl.rotate_with_degree(rm_define.anticlockwise,90)
+    chassis_ctrl.rotate_with_degree(rm_define.clockwise,90)
+
